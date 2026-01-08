@@ -1,36 +1,34 @@
-# Task 2 – Spring Boot REST API with Swagger
+# Task2Project 06.16.24
 
-## Description
-This project is a REST API built with Spring Boot.
-It provides CRUD operations for products and is documented using Swagger (OpenAPI).
+Spring Boot REST API with Swagger (OpenAPI).
 
-All use cases are demonstrated using Swagger UI.
+## Swagger UI
+http://localhost:8080/swagger-ui/index.html
 
----
-
-## How to run
-1. Open the project in IntelliJ IDEA
-2. Run `Task2ProjectApplication`
-3. Open Swagger UI:  
-   http://localhost:8080/swagger-ui/index.html
+![Swagger UI](screenshots/swagger-ui.png)
 
 ---
 
-## API Documentation
-Swagger OpenAPI definition:  
-http://localhost:8080/v3/api-docs
+## Use cases
+
+### POST /api/products
+Create product.
+
+![POST product](screenshots/post-product.png)
+![POST product result](screenshots/post-product1.png)
 
 ---
 
-## Use cases (Swagger)
+### GET /api/products/{id}
+Get product by ID.
 
-### 1. Create product
-**Endpoint:**  
-POST `/api/products`
+![GET by ID](screenshots/get-by-id.png)
+![GET by ID result](screenshots/get-by-id1.png)
 
-**Request body:**
-```json
-{
-  "name": "Test product",
-  "price": 99.99
-}
+---
+
+### GET /api/products/{id} – Not Found
+Product not found case.
+
+![GET not found](screenshots/get-not-found.png)
+![GET not found result](screenshots/get-not-found1.png)
